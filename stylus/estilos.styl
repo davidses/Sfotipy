@@ -1,0 +1,127 @@
+@import "normalyze.styl"
+@import "fonts.styl"
+
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #CC2F6F
+
+a 	
+	text-decoration none
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px
+figure
+	margin 0
+img
+	vertical-align top
+//OOCSS CLASES
+.relative
+	position relative
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
+.padding
+	padding 1em
+.right-text
+	text-align right
+.border-bottom
+	border-bottom 1px solid gris_claro
+
+///////////////
+
+.header
+	height 3.5em	
+	.button-menu
+		color gris_oscuro
+		left .5em
+		margin-top -10px
+		position absolute
+		top 50%
+	.title
+		font-size 1.1em
+		line-height 3.3em
+		text-align center
+	.menu
+		display none
+		
+			
+.container
+	font-size 0
+	padding 1.4rem
+	text-align center
+	
+.name
+	color gris_oscuro
+	font-size 1.2em
+		
+.author
+	color gris_claro
+	
+.song
+	display inline-block 
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 8rem
+	&:nth-child(even)
+		margin-right 0
+	p 
+		margin .5em 0
+		
+.playing
+	&.small
+		width 20em
+	p 
+		margin .5em 0
+		
+.actions
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	background rgba(black, .3)
+
+.action 
+	font-size 1.25em
+	color white
+	letter-spacing: .4em // AGREGADO POR MI
+	&.gray
+		color gris_claro
+
+.progress
+	margin 1em 0
+	position relative
+	.min 
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px		
+		height 5px
+		width 75%
+		margin 0 auto
+	.state
+		background rojo
+		border-radius 5px
+		height 5px
+		position relative
+		width 35%
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px	
+.play 
+	margin-top 1em
+	letter-spacing 1em
