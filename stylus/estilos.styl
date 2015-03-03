@@ -4,6 +4,7 @@
 gris_oscuro = #333333
 gris_claro = #818181
 rojo = #CC2F6F
+gris_mas_claro = #F3F3F3
 
 a 	
 	text-decoration none
@@ -14,6 +15,10 @@ figure
 	margin 0
 img
 	vertical-align top
+ul
+	margin 0 
+	padding 0
+	
 //OOCSS CLASES
 .relative
 	position relative
@@ -27,7 +32,11 @@ img
 	text-align right
 .border-bottom
 	border-bottom 1px solid gris_claro
-
+.round
+	border-radius 50%
+	overflow hidden
+.wrap
+	width 1000px
 ///////////////
 
 .header
@@ -125,3 +134,110 @@ img
 .play 
 	margin-top 1em
 	letter-spacing 1em
+
+.avatar
+	display inline-block	
+.input
+	border 1px solid gris_claro
+	border-radius 5px
+	color gris_claro
+	height 2.5em
+	padding 0 1em 0 2em
+.search-icon
+	color gris_claro
+	left .5em
+	position absolute
+	top .8em
+.close-icon
+	font-size 1.2em
+	color gris_claro
+	right .5em
+	position absolute
+	top .4em
+	
+// MEDIAQUERY
+
+// A PARTIR DE 480 PX DE ANCHO (TABLET)
+@media screen and (min-width:480px) 
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+	.logo
+		display none
+
+// A PARTIR DE 1000 PX DE ANCHO (DESKTOP)			
+@media screen and (min-width:1000px)
+	body
+		background gris_mas_claro
+	.button-menu
+		display none
+	.playing
+		&.large
+			margin 0 auto
+			width 62.5em
+			display flex
+			justify-content space-between
+	.music
+		width 32.5em
+		
+	.playlist
+		width 22em
+		padding 0 2em
+		border-left 1px solid gris_claro	
+		.list
+			list-style none
+		
+	.header
+		height auto
+		.title
+			display none
+		.menu
+			display block
+			.list
+				display flex
+				flex-direction row
+			.item
+				list-style none			
+				a
+					color gris_oscuro	
+					text-transform uppercase
+					padding .8em	
+					display block
+					border-top 5px solid transparent
+					&:hover
+						border-top 5px solid gris_claro
+	
+	.header-logo
+		background white
+		border-bottom 1px solid gris_claro
+	.logo 
+		display flex
+		justify-content space-between
+		padding 1em 0
+		
+	.logotipo
+		width 122px
+		margin-right auto
+	.search
+		span
+		form
+			display inline-block
+	.user
+		margin-right 1em
+		line-height 2.3em
+	.username
+		color gris_claro
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-top 9px solid gris_claro
+			border-right 7px solid transparent
+			display inline-block
+			

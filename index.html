@@ -9,23 +9,42 @@
 </head>
 <body>
 	<header class="header relative border-bottom">
+		<div class="header-logo">
+			<div class="logo wrap center-block">
+				<figure class="image logotipo">
+					<img src="img/logo.png" alt="Sfotipy">
+				</figure>
+				<div class="search relative">
+					<span class="icon-search search-icon"></span>
+					<form action="">
+						<input class="input" placeholder="Busqueda"type="text">
+					</form>
+					<span class="close-icon">x</span>
+				</div>
+				<div class="user">
+					<figure class="avatar">
+						<img class="round"src="img/avatares/avatar1.jpg" alt="@davigazor" height="38" width="38">
+					</figure>
+					<span class="username">
+						@davigazor
+					</span>
+				</div>
+			</div>
+		</div>
 		<a href="" class="button-menu icon-menu"></a>
 		<nav class="menu">
-			<ul class="list">
+			<ul class="list wrap center-block">
 				<li class="item">
 					<a href="">Top Hits</a>
+				</li>
+				<li class="item">
+					<a href="">Profile</a>
+				</li>
+				<li class="item">
+					<a href="">Setting</a>
 				</li>
 				<li class="item">
 					<a href="">Playlist</a>
-				</li>
-				<li class="item">
-					<a href="">Top Hits</a>
-				</li>
-				<li class="item">
-					<a href="">Top Hits</a>
-				</li>
-				<li class="item">
-					<a href="">Top Hits</a>
 				</li>
 			</ul>
 		</nav>
@@ -36,47 +55,107 @@
 		</div>
 	</header>
 
-	<section class="playing small center-block">
-		<figure class="image relative">
-			<img src="img/songs/test-playing.jpg" width="320" height="320" alt="Come Get It Bae Pharrell Williams">
-			<div class="actions padding right-text">
-				<a href="" class="action icon-add"></a>
-				<a href="" class="action icon-love"></a>
-				<a href="" class="action icon-share"></a>
-			</div>
-		</figure>
-		<div class="padding">
-			<div class="progress">
-				<spam class="min">0:45</spam>
-				<div class="total">
-					<div class="state">
-						<div class="circle">							
+	<section class="playing small medium large">
+		<div class="music">
+			<figure class="image relative">
+				<img src="img/songs/test-playing.jpg" width="320" height="320" alt="Come Get It Bae Pharrell Williams">
+				<div class="actions padding right-text">
+					<a href="" class="action icon-add"></a>
+					<a href="" class="action icon-love"></a>
+					<a href="" class="action icon-share"></a>
+				</div>
+			</figure>
+			<div class="padding">
+				<div class="progress">
+					<spam class="min">0:45</spam>
+					<div class="total">
+						<div class="state">
+							<div class="circle">							
+							</div>
 						</div>
 					</div>
+					<spam class="max">4:20</spam>
 				</div>
-				<spam class="max">4:20</spam>
-			</div>
-			<div class="description border-bottom center-text">
-				<p class="name">
-					Come Get It Bae
-				</p>
-				<p class="author">
-					Pharrell Williams
-				</p>
-			</div>	
-			<div class="play center-text">
-				<a href="" class="action gray icon-prev"></a>
-				<a href="" class="action gray icon-play"></a>
-				<a href="" class="action gray icon-next"></a>
-				<a href="" class="action gray icon-random"></a>
-				<a href="" class="action gray icon-vol"></a>
+				<div class="description border-bottom center-text">
+					<p class="name">
+						Come Get It Bae
+					</p>
+					<p class="author">
+						Pharrell Williams
+					</p>
+				</div>	
+				<div class="play center-text">
+					<a href="" class="action gray icon-prev"></a>
+					<a href="" class="action gray icon-play"></a>
+					<a href="" class="action gray icon-next"></a>
+					<a href="" class="action gray icon-random"></a>
+					<a href="" class="action gray icon-vol"></a>
+				</div>
 			</div>
 		</div>
-		
-		
+		<div class="playlist">
+			<p class="name">
+				Girl
+			</p>
+			<p class="author">
+				Pharrell Wiliams
+			</p>
+			<ul class="list">
+				<li class="item border-bottom">
+					<span>
+						Otro tema
+					</span>
+					<a href="" class="action icon-add grey"></a>
+					<a href="" class="action icon-love grey"></a>
+					<a href="" class="action icon-share grey"></a>
+				</li>
+			</ul>
+		</div>
 	</section>
 
 	<section class="container">
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
+			</figure>
+			<p class="name">Girls</p>
+			<p class="author">Pharrell Williams</p>
+		</article>
 		<article class="song">
 			<figure class="image">
 				<img src="img/songs/test.jpg" height="128" width="128" alt="Pharrell Williams">
